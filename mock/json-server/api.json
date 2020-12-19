@@ -1,0 +1,14 @@
+{
+  "Users": [
+    {
+      "id": "1",
+      "name": "鈴木",
+      "comment": "よろしくお願いします",
+      "follow":"29",
+      "follower":"30",
+      "birthday":"9月14日",
+      "location":"Tokyo",
+      "web":"https://suzukiWeb.sample"
+    }
+  ]
+}
