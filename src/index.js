@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import reportWebVitals from './reportWebVitals';
+import "./index.css";
 function App(){
   return(
     <div>

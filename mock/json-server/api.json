@@ -2,6 +2,7 @@
   "Users": [
     {
       "id": "1",
+      "pass":"aiueo",
       "name": "鈴木",
       "comment": "よろしくお願いします",
       "follow":"29",
@@ -9,6 +10,17 @@
       "birthday":"9月14日",
       "location":"Tokyo",
       "web":"https://suzukiWeb.sample"
+    },
+    {
+    "id": "2",
+    "pass":"12345",
+    "name": "田中",
+    "comment": "田中です。",
+    "follow":"29",
+    "follower":"30",
+    "birthday":"9月14日",
+    "location":"Tokyo",
+    "web":"https://suzukiWeb.sample"
     }
   ]
 }
