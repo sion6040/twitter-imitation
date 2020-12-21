@@ -1,18 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import reportWebVitals from './reportWebVitals';
 import "./index.css";
 function App(){
   return(
     <div>
-      <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={LoginPage}>
-        </Route>
-      </Switch>
-        </BrowserRouter>
+    <LoginPage />
     <div style={{display:"flex"}}>
       <div style={{flexGrow:1}}>
         <p>ホーム</p>
