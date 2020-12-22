@@ -3,6 +3,7 @@ import axios from 'axios';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const server = 'http://localhost:3001/Users';
 
+
 var ID, PASS;
 var i = 0, key = 0;
 var res = [];
@@ -41,21 +42,21 @@ function Page () {
       return (
         <div>
           <div style={{ textAlign: "center" }}>
-            <span style={{ color: "white", fontSize: "45px" }}>ID<span style={{ marginLeft: "75px" }}>：</span>
-              <input style={{ backgroundColor: "white", height: "30px", width: "300px", paddingTop: "25px", marginLeft: "0px" }} type="text" onChange={(e) => { setId(e.target.value) }} ></input>
+            <span style={{ color: "white", fontSize: "45px" }}>ID<span style={{ marginLeft: "60px" }}>：</span>
+              <input style={{ backgroundColor: "white", height: "30px", width: "300px", paddingTop: "25px", marginLeft: "0px",fontSize:"20px" }} type="text" onChange={(e) => { setId(e.target.value) }} ></input>
               <br />
       PASS：
-      <input type="password" style={{ backgroundColor: "white", height: "30px", width: "300px", paddingTop: "25px" }} onChange={(e) => { setPass(e.target.value) }}></input>
+      <input type="password" style={{ backgroundColor: "white", height: "30px", width: "300px", paddingTop: "25px",fontSize:"20px" }} onChange={(e) => { setPass(e.target.value) }}></input>
             </span><br />
-            <input type="button" onClick={Click} value="login" style={{ width: "100px" }}></input>
-            <br />
-            <span style={{ fontSize: "10px" }}>入力ID：{ID}</span>
-            <span style={{ fontSize: "10px" }}>　入力PASS：{PASS}</span>
+            <input type="button" onClick={Click} value="login" style={{ width: "100px",width:"200px",height:"40px",backgroundColor:"white",fontSize:"20px",marginLeft:"270px" }}></input>
+            <br /><br />
+            <span style={{ fontSize: "15px",color:"white" }}>入力ID：{ID}</span>
+            <span style={{ fontSize: "15px",color:"white" }}>　入力PASS：{PASS}</span>
           </div>
         </div>
       );
     }
-    else {
+    else if(login===true){
       return (
         <div>
           loginpage
