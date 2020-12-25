@@ -13,15 +13,6 @@ function App(){
       <br />      <br />      <br />
       </div>
     <LoginPage />
-    <div style={{display:"flex"}}>
-      <div style={{flexGrow:1}}>
-        <p>ホーム</p>
-        <p>プロフィール</p>
-        <p>通知</p>
-        <p>設定</p>
-      </div>
-      <div style={{flexGrow:2}}>koyouso2</div>
-    </div>
     </div>
   )
 }
