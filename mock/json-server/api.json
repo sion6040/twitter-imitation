@@ -21,6 +21,28 @@
     "birthday":"9月14日",
     "location":"Tokyo",
     "web":"https://suzukiWeb.sample"
-    }
+    },
+    {
+      "id": "3",
+      "pass":"3",
+      "name": "吉田",
+      "comment": "よろしくお願いします",
+      "follow":"29",
+      "follower":"30",
+      "birthday":"9月14日",
+      "location":"Tokyo",
+      "web":"https://suzukiWeb.sample"
+      },
+      {
+        "id": "4",
+        "pass":"4",
+        "name": "かい",
+        "comment": "スポーツ",
+        "follow":"29",
+        "follower":"30",
+        "birthday":"9月14日",
+        "location":"Tokyo",
+        "web":"https://suzukiWeb.sample"
+        }
   ]
 }

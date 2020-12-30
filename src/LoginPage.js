@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Home from "./Home";
 import Prof from "./Prof";
+import Conf from "./Conf";
+import Noti from "./Noti";
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const server = 'http://localhost:3001/Users';
@@ -66,17 +68,19 @@ function Page() {
           <div style={{ flexGrow: 1 }}>
             <Router>
               <div>
-                <Link to="/home"><button style={{color:"white"}}>Home</button></Link>
+                <Link to="/home"><button style={{color:"white"}}>ホーム</button></Link>
                 <span>　　　</span>
-                <Link to="/prof"><span>神ならざる者の〇〇</span></Link>
+                <Link to="/prof"><span>プロフィール</span></Link>
                 <span>　　　</span>
+                <Link to="/noti"><span>通知</span></Link>
+                <span>　　　</span>
+                <Link to="/conf"><span>設定</span></Link>
                 <Route path="/home" component={Home}></Route>
                 <Route path="/prof" component={Prof}></Route>
+                <Route path="/noti" component={Noti}></Route>
+                <Route path="/conf" component={Conf}></Route>
               </div>
             </Router>
-            <p style={{ fontSize: "20px", color: "white" }}>ホーム</p>
-            <p>プロフィール</p>
-            <p>通知</p>
             <p>設定</p>
           </div>
           <div style={{ flexGrow: 2 }}>koyouso2</div>
