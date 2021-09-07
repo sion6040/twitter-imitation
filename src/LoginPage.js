@@ -6,33 +6,32 @@ import Conf from "./Conf";
 import Noti from "./Noti";
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-const server = "http://localhost:3000/Users";
-
-var i = 0,
-	key = 0;
-var res = [];
-
-function API() {
-	// axios.post('/user', {
-	//   firstName: 'Mineo',
-	//   lastName: 'Okuda'
-	// })
-	// .then(function (response) {
-	//   console.log(response);
-	// })
-	// .catch(function (error) {
-	//   console.log(error);
-	// });
-}
+// const server = "http://localhost:3000/Users";
 
 function Page() {
 	const [id, setId] = useState(null);
 	const [pass, setPass] = useState(null);
 	const [login, setLogin] = useState(false);
-	const [token,setToken]=useState(null);
+	// const [token,setToken]=useState(null);
 
 	const Click = () => {
-	
+		console.log("a");
+		axios.post('localhost:3000/login',
+		JSON.stringify(
+		  {
+			"id":id,
+			"pass":pass,
+	  }
+	  ),{
+		headers:{
+		  'Accept': 'application/json', 
+		  'Content-Type': 'application/json'
+		}
+	  }).then(res => {
+		setLogin(true);
+		}).catch((e)=> {
+		console.log(e);
+	  })    
 	};
 
 	API();
