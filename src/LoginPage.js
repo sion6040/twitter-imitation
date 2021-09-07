@@ -16,17 +16,13 @@ function Page() {
 
 	const Click = () => {
 		console.log("a");
-		axios.post('localhost:3000/login',
+		axios.post('http://localhost:3001/login',
 		JSON.stringify(
 		  {
 			"id":id,
 			"pass":pass,
 	  }
 	  ),{
-		headers:{
-		  'Accept': 'application/json', 
-		  'Content-Type': 'application/json'
-		}
 	  }).then(res => {
 		setLogin(true);
 		}).catch((e)=> {
@@ -34,7 +30,6 @@ function Page() {
 	  })    
 	};
 
-	API();
 	if (login === false) {
 		return (
 			<div>
