@@ -67,11 +67,11 @@ app.post('/login', (req, res) => {
           res.send(JSON.stringify(userData));
         } else {
           console.log("pass error");
-          res.send(null);
+          res.send("pass errors");
         }
       }else {
         console.log("id error");
-        res.send(null);
+        res.send("no data");
       }
     }
   );
