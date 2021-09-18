@@ -28,7 +28,7 @@
 		"eject": "react-scripts eject",
 		"mock": "./node_modules/json-server/lib/cli/bin.js --watch ./mock/json-server/api.json -p 3001"
 	},
-	"proxy": "http://localhost:3000/",
+	"proxy": "http://localhost:4000/",
 	"eslintConfig": {
 		"extends": [
 			"react-app",
